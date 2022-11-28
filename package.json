@@ -1,0 +1,24 @@
+{
+  "name": "ws-test-server",
+  "version": "1.0.0",
+  "description": "reads lines of JSON (one object per line) from stdin and sends them as individual messages through a WebSocket configured at a port defined by process.env.WS_TEST_PORT.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanguardapps/ws-test-server.git"
+  },
+  "keywords": [
+    "WebSocket",
+    "back-end",
+    "testing"
+  ],
+  "author": "Roy McClanahan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanguardapps/ws-test-server/issues"
+  },
+  "homepage": "https://github.com/vanguardapps/ws-test-server#readme"
+}
