@@ -1,7 +1,8 @@
 {
   "name": "ws-test-server",
-  "version": "1.0.0",
-  "description": "reads lines of JSON (one object per line) from stdin and sends them as individual messages through a WebSocket configured at a port defined by process.env.WS_TEST_PORT.",
+  "type": "module",
+  "version": "1.0.2",
+  "description": "starts a basic WebSocket server and allows line-by-line input from the stdin stream where each line must be a complete JSON object formatted so JSON.parse() can understand it. each line is sent as JSON.stringify() data to the front-end through the socket. coordination over port number can be done in three ways: specifying port to the default exported function as first parameter, specifying port in WS_TEST_PORT environment variable, or specifying no port and using default port 7071.",
   "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/vanguardapps/ws-test-server/issues"
   },
-  "homepage": "https://github.com/vanguardapps/ws-test-server#readme"
+  "homepage": "https://github.com/vanguardapps/ws-test-server#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ws": "^8.11.0"
+  }
 }
